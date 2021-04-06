@@ -1,0 +1,5 @@
+#hinh1{
+    background-image: url(./unnamed.jpg), url(./images.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+}
