@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 body, html{
     background-image: linear-gradient(rgba(37, 195, 223), rgb(112, 224, 252, 0.5));
@@ -10,24 +9,25 @@ body, html{
     height: 100%;
 }
 .header{
-    height: 50px;
+    height: 70px;
     border-bottom: 7px dotted white ;
 }
 .menu li {
     display: inline-block;
-    padding-left: 25px;
-    line-height: 45px;
-    font-size: 18px;
+    padding: 10px;
+    margin: 10px 10px 10px 50px;
+    font-size: 20px;
 }
 
 .menu a{
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 }
 a:hover{
     color: violet;
 }
-h2{
+.header h1{
     color: white;
     text-shadow: 5px 5px 10px rgb(33, 35, 173);
     position: absolute;
@@ -35,4 +35,82 @@ h2{
     top: 7px;
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+img{
+    margin: 40px 40px 20px 40px;
+    width: 80%;
+}
+.left{
+    float: left;
+    width: 50%;
+}
+.left h1{
+    color: white;
+    text-shadow: 2px 2px 0px white;
+    margin-left: 100px;
+}
+h3{
+    color: rgb(239, 245, 250);
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.right{
+    float: right;
+    width: 50%;
+    font-size: 20px;
+}
+.right h1{
+    color: white;
+    margin: 40px auto 30px 0;
+}
+.right p{
+    color: white;
+    margin: 5px;
+}
+span{
+    color: white;
+    float: left;
+    width: 30%;
+    margin: 3px auto 3px 70px;
+}
+input, select{
+    border-radius: 5px;
+    border: 2px solid blue;
+    width: 300px;
+    margin: 2px;
+    height: 25px;
+}
+select{
+    width: 7%;
+}
+.zzz{
+    margin-top: 50px;
+}
+textarea{
+    border-radius: 5px;
+    border: 2px solid blue;
+    width: 300px;
+    margin: 2px;
+}
+.button{
+    text-align: center;
+}
+.button input{
+    width: 70px;
+    border: 2px dashed blue;
+}
+.footer{
+    clear: both;
+    height: 70px;
+    border-top: 7px dotted white ;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.footer p{
+    margin: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }

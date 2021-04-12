@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+.header{
+    width: 100%;
+    height: 68px;
+    /*border: 2px solid black;*/
+    display: flex;
+}
+
+.header .logo{
+    width: 70%;
+    margin-top: 10px;
+}
+
+.header .logo>a, .dotcom{
+    text-decoration: none;
+    font-size: 37px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: rgb(54, 50, 50);
+}
+
+.header .logo>a:hover{
+    color: rgb(40, 199, 40);
+}
+
+.header .dotcom{
+    color: rgb(40, 199, 40);
+}
+
+.header .desc{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    color: rgb(40, 199, 40);
+}
+
+.header .desc>Button{
+    padding: 6px 14px;
+    border-radius: 5px;
+    background-color: rgb(40, 199, 40);
+    color: white;
+    font-weight: 700;
+}
+
+/*nav-row*/
+.nav-row {
+    width: 100%;
+    height: 44px;
+    background-color: gray;
+    position: relative;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-list li{
+    padding: 13px;
+    list-style-type: none;
+}
+
+.nav-list>li:hover{
+    background-color: #000;
+}
+
+.nav-list>li>a, .nav-list .sub-nav-list>li>a{
+    text-decoration: none;
+    color: #ffff;
+    
+}
+
+.nav-list>li:nth-child(11){
+    margin-left: 200px
+}
+
+.nav-list>li:nth-child(10){
+    margin-left: 13px;
+}
+
+/*sub-nav*/
+.nav-list .sub-nav-list{
+    margin-top: 12px;
+    display: none;
+    list-style-type: none;
+    position: absolute;
+}
+
+.nav-list .sub-nav-list>li{
+    padding: 15px;
+}
+.nav-list .sub-nav-list>li:hover{
+    background-color: gray;
+}
+
+.nav-list>li:hover:nth-child(10)>.sub-nav-list{
+    display: block;
+    background-color: rgb(46, 46, 46);
+}
+
+/*content*/
+/*nav-collum*/
+.content{
+    display: flex;
+}
+.content> .nav-collum{
+    width: 12%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.nav-collum>ul{
+    font-size: 15px;
+    list-style-type: none;
+    /*scroll*/
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 620px;
+}
+
+.nav-collum>ul>h2{
+    padding: 5px;
+}
+
+.nav-collum .nav-list-coll>li>a{
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-collum .nav-list-coll>li{
+    padding: 5px;
+}
+
+.nav-collum .nav-list-coll>li:hover{
+    background-color: gray;
+}
+
+/*desc-content*/
+.desc-content{
+    width: 70%;
+    /*border: 2px solid black;*/
+}
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+/*control*/
+.control{
+    margin: 5px 18px;
+    display: flex;
+}
+
+.btn{
+    padding: 10px;
+    background-color: rgb(40, 199, 40);
+    color: whitesmoke;
+    font-size: 15px;
+    width: 100px;
+}
+
+.next{
+    margin-left: 80%;
+}
+
+/*sub-content-1*/
+.sub-content-1{
+    background-color: #d4edda;
+    display: flex;
+    height: 50%;
+
+}
+
+.sub-content-1>.image>img{
+    width: 200px;
+    height: 180px;
+}
+
+.sub-content-1>.image{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.sub-content-1 .text-sub-content{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 80px;
+}
+
+.sub-content-1 .text-sub-content>Button{
+    padding: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(40, 199, 40);
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* .sub-conten-2{
+    margin-top: 110px;
+    clear: both;
+} */
+
+/*advertisement: quảng cáo*/
+.advertisement{
+    border-left: 1px solid gray;
+}
