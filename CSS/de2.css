@@ -25,6 +25,23 @@ body{
     right: 30px;
     font-family:Arial, Helvetica, sans-serif;
 }
+li:hover{
+    color: red;
+    cursor: pointer;
+}
+.haha li{
+    /* display: none; */
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.first:hover{
+    color: red;
+    cursor: pointer;
+    display: block;
+}
 .left{
     float: left;
     width: 50%;
