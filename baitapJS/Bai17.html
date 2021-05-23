@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/bai17.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Dang nhap</title>
+    <script>
+        function ktten()
+        {
+            var regt=/^[A-Z]+[A-Za-z]*(\s*[A-Z]+[A-Za-z]*)$/;
+            t = document.getElementById("txttdn").value;
+            if(regt.test(t))
+            {
+                document.getElementById("er1").innerHTML="";
+            }
+            else
+            {
+                document.getElementById("er1").innerHTML="Tên đăng nhập không hợp lệ!";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container-fuild">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text right">
+                <p>Tên đăng nhập:</p>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control" id="txttdn" placeholder="Nhập vào tên đăng nhập">
+            </div>
+            <div class="col-1">
+                <span class="text_danger" id="er1">*</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text right">
+                <p>Mật khẩu:</p>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control" id="txtmk" placeholder="Nhập vào mật khẩu">
+            </div>
+            <div class="col-1">
+                <span class="text_danger" id="er1">*</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p>Nhập lại mật khẩu:</p>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control" id="txtnlmk" placeholder="Nhập vào xác nhận mật khẩu">
+            </div>
+            <div class="col-1">
+                <span class="text_danger" id="er1">*</span>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>THÔNG TIN CÁ NHÂN</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p>Họ và tên:</p>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control" id="txttdn" placeholder="Nhập vào họ tên(bắt buộc nhập)">
+            </div>
+            <div class="col-1">
+                <span class="text_danger" id="er1">*</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p>Ngày sinh:</p>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control" id="txtmk" placeholder="Nhập vào mật khẩu">
+            </div>
+            <div class="col-1">
+                <span class="text_danger" id="er1">*</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 ">
+                <p>Giới tính:</p>
+            </div>
+            <div class="col-7 abc">
+                <input type="radio" name="Nam" id="nam" value="nam">
+                <label for=" nam">Nam</label>
+                <input type="radio" name="Nu" id="num" value="nu">
+                <label for="nu">Nữ</label>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

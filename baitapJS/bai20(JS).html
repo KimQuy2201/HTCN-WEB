@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 20</title>
+    <link rel="stylesheet" href="./CSS/bai20(JS).css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        function dangky(){
+            let hoten = document.getElementById("txtHoten").value;
+            let lop = document.getElementById("selLop").value;
+            let monhoc = document.getElementById("selMonhoc").value;
+            let loai = "Lý thuyết";
+            if (document.getElementById("selLoaiTH").checked)
+                loai = "Thực hành";
+
+            let row = "<tr><td>"+hoten+"</td><td>"+monhoc+"</td><td>"+loai+"</td></tr>";
+            let tbl = document.getElementById("myTable");
+            let newRow = tbl.insertRow(tbl.rows.length);
+            newRow.innerHTML = row;
+        }
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-12" style="background-color: rgb(184, 207, 215);">
+                <img src="./image/logoiuh.jpg" alt="logo" width="200">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p id="error"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-4">
+                        <label for="txtHoten">Họ tên: </label>
+                    </div>
+                    <div class="col-8">
+                        <input class="form-control" type="text" id="txtHoten" value="Anna Smith" 
+                        required="required" autocomplete="off">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-4">
+                        <label for="selLop">Lớp: </label>
+                    </div>
+                    <div class="col-8">
+                        <select class="form-control-file p-2" id="selLop">
+                            <option>Đại học kỹ thuật phần mềm 9A</option>
+                            <option>Đại học kỹ thuật phần mềm 9B</option>
+                            <option selected="selected">Đại học kỹ thuật phần mềm 10A</option>
+                            <option>Đại học kỹ thuật phần mềm 10A</option>
+                            <option>Đại học kỹ thuật phần mềm 9A Tiên tiến</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mmt-2">
+                    <div class="col-4">
+                        <label for="selMonhoc">Môn học:</label>
+                    </div>
+                    <div class="col-8">
+                        <select class="form-control-file p-2" id="selMonhoc">
+                            <option>Lập trình hướng sự kiện Java</option>
+                            <option>Lập trình phân tán với công nghệ Java</option>
+                            <option selected="selected">Lập trình hướng đối tượng</option>
+                            <option>Kỹ thuật lập trình</option>
+                            <option>Phân tích thiết kế hệ thống</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label>Loại: </label>
+                    </div>
+                    <div class="col-8">
+                        <input class="m-2 form-check-inline" type="radio" name="selLoai" id="selLoaiLT" checked="checked">
+                        <label class="form-check-label" for="selLoaiLT">Lý thuyết</label>
+                        <input class="m-2 form-check-inline" type="radio" name="selLoai" id="selLoaiTH">
+                        <label class="form-check-label" for="selLoaiTH">Thực Hành</label>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="button" onclick="return dangky();">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8"></div>
+        </div>
+        <div class="row mt-2">
+            <table class="table table-bordered table-striped table-hover m-3">
+                <thead>
+                    <tr>
+                        <th>Họ tên</th>
+                        <th>Lớp</th>
+                        <th>Môn học đăng ký</th>
+                        <th>Loại</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
